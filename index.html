@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
   <meta charset="UTF-8" />
-  <title>FB 浮動按鈕</title>
+  <title>Facebook 浮動按鈕</title>
   <style>
-    .fb-float-btn {
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .float-button {
       position: fixed;
       bottom: 20px;
       right: 20px;
+      background-color: #1877F2;
+      color: white;
       width: 60px;
       height: 60px;
-      background-color: #4267B2;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      font-size: 30px;
       cursor: pointer;
-      z-index: 9999;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: background-color 0.3s;
+      text-decoration: none;
     }
-    .fb-float-btn:hover {
-      background-color: #365899;
-    }
-    .fb-float-btn img {
-      width: 32px;
-      height: 32px;
+    .float-button:hover {
+      background-color: #145DBF;
     }
   </style>
 </head>
 <body>
-  <div class="fb-float-btn">
-    <a href="https://www.facebook.com/happyfeetbnb/?locale=zh_TW" target="_blank" aria-label="Facebook">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="FB" />
-    </a>
-  </div>
+  <a
+    class="float-button"
+    href="https://www.facebook.com/happyfeetbnb/?locale=zh_TW"
+    target="_blank"
+    title="前往我們的 Facebook"
+  >
+    f
+  </a>
 </body>
 </html>

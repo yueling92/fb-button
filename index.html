@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>FB 浮動按鈕</title>
+  <style>
+    .fb-float-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #4267B2;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      z-index: 9999;
+    }
+    .fb-float-btn:hover {
+      background-color: #365899;
+    }
+    .fb-float-btn img {
+      width: 32px;
+      height: 32px;
+    }
+  </style>
+</head>
+<body>
+  <div class="fb-float-btn">
+    <a href="https://www.facebook.com/happyfeetbnb/?locale=zh_TW" target="_blank" aria-label="Facebook">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="FB" />
+    </a>
+  </div>
+</body>
+</html>
